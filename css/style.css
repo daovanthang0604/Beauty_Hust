@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.6rem;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__left_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__left_main li {
+  list-style: none;
+  padding: 14px 16px;
+}
+
+.nav__left_main a {
+  text-decoration: none;
+  line-height: 2.4rem;
+  color: #6e6d7a;
+  font-weight: 500;
+}
+
+.nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2rem;
+}
+
+.btn {
+  padding: 1rem 1.6rem;
+  border-radius: 1rem;
+  line-height: 2rem;
+  background-color: #EA4C89;
+  font-weight: 500;
+  outline: none;
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.btn--white {
+  background-color: white;
+  color: #856D7A;
+}
+
+.btn--filter {
+  background-color: white;
+  color: #0d0c22;
+  line-height: 1.8rem;
+  border: 1px solid #E7E7E9;
+}
+
+.banner {
+  padding: 0 7.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F9F8FD;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 48rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner__content {
+  width: calc(100% - 65rem);
+}
+
+.banner__content p {
+  font-weight: 300;
+  line-height: 2.4rem;
+  color: #333;
+  margin: 1.6rem 0;
+}
+
+.banner__image {
+  background-image: url(../images/banner.png);
+  width: 51rem;
+  height: 36rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main {
+  padding-top: 3.2rem;
+  padding-left: 7.2rem;
+  padding-right: 7.2rem;
+}
+
+.main__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__header_dropdown {
+  font-weight: 400;
+  padding: 1rem 0rem 1rem 1rem;
+  border-radius: 1rem;
+  outline: none;
+  color: #6E6D8F;
+  border: 1px solid #E7E7E9;
+  width: 10rem;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.main__header_dropdown:hover {
+  -webkit-box-shadow: 0 0 0.5rem 0px rgba(234, 76, 137, 0.5);
+          box-shadow: 0 0 0.5rem 0px rgba(234, 76, 137, 0.5);
+}
+
+.main__header_filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__header_filter .active {
+  color: black !important;
+  font-weight: 500;
+  background: rgba(51, 51, 51, 0.05);
+  border-radius: 0.8rem;
+}
+
+.main__header_filter li {
+  list-style: none;
+  padding: 1rem 1.2rem;
+  color: #6e6d7a;
+}
+
+.main__header_filter li:hover {
+  color: #333;
+}
+
+.main__header_filter li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main__header button svg {
+  color: black;
+  fill: currentColor;
+  height: 1.3rem;
+  width: 1.3rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+}
+
+.main__body_image {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(33.6rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(33.6rem, 1fr));
+  grid-gap: 3.6rem;
+  margin: 2rem auto 0;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
